@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="registro.RegistroActivity">
+
+    <EditText
+        android:id="@+id/tvDni"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="108dp"
+        android:hint="Dni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/tvApellido"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:hint="Apellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDni"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/tvNombre"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:hint="Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvApellido"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/tvEmail"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombre"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/tvContrasena"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:hint="Contraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvContrasena" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
